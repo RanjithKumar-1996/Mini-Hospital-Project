@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Web</title>
+    <link rel="icon" href="/images/hospital-logo.avif">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=location_oncallmail"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <section class="emergency">
+        <p class="emer-para1">Emergency : Call 123-456-7890</p>
+        <p class="emer-para2">Emergency : Call 123-456-7890</p>
+    </section>
+    <header class="head">
+        <div class="left-heading">
+            <img src="/images/hospital-logos.jpg" alt="Hospital Logo" width="100px">
+            <h2 class="hospital-name">HOSPITAL</h2>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#doctors">Doctors</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="Home" class="hospital-banner">
+        <div class="left-banner">
+            <h1 class="title">Providing Quality <br>Healthcare</h1>
+            <p>Experienced doctors providing <br>compassionate care.</p>
+            <a href="#appointments"><button type="button" class="btn-app">Make Appointment</button></a>
+        </div>
+        <div class="right-banner">
+            <img src="/images/doctor banner.webp" alt="Doctor Banner" class="banner-img">
+        </div>
+    </section>
+
+    <section id="doctors" class="doctors">
+        <h2 class="doctors-head">Our Doctors</h2>
+
+        <div class="doctors-img">
+            <figure>
+                <img src="/images/doctor female.webp" alt="Dr.Olivia Taylor">
+                <figcaption class="doctors-name">Dr.Olivia Taylor</figcaption>
+                <figcaption class="doctors-role">Cardiology</figcaption>
+                <figcaption class="doctors-status">Available</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/old-medical.jpg" alt="Dr.James Wilson">
+                <figcaption class="doctors-name">Dr.James Wilson</figcaption>
+                <figcaption class="doctors-role">Neurology</figcaption>
+                <figcaption class="doctors-status">Available</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/female-doctor.avif" alt="Dr.Sophia Martinez">
+                <figcaption class="doctors-name">Dr.Sophia Martinez</figcaption>
+                <figcaption class="doctors-role">Pediatries</figcaption>
+                <figcaption class="doctors-status">Available</figcaption>
+            </figure>
+            <figure>
+                <img src="/images/portrait-young.avif" alt="Dr.William Anderson">
+                <figcaption class="doctors-name">Dr.William Anderson</figcaption>
+                <figcaption class="doctors-role">Orthopodics</figcaption>
+                <figcaption class="doctors-status">Available</figcaption>
+            </figure>
+        </div>
+
+        <button type="button" class="doctors-btn">View All</button>
+    </section>
+
+    <section id="appointments" class="appointments">
+        <h2 class="app-head">Book an Appointment</h2>
+        <form action="">
+            <input type="text" required placeholder="Full Name" class="name form" id="name"><br>
+            <input type="text" required placeholder="Date" class="date form" id="date" onfocus="(this.type='date')"
+                onblur="if(!this.value)this.type='text'">
+            <select name="appointments" id="appointment" class="select form" required aria-placeholder="Department">
+                <option value="">--select--</option>
+                <option value="Orthopodics">Orthopidics</option>
+                <option value="Cardialogy">Cardialogy</option>
+                <option value="Neurology">Neurology</option>
+                <option value="Pediatries">Pediatries</option>
+            </select>
+            <button type="Submit" class="app-btn" id="appbtn">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="contact-head">Contact Us</h2>
+        <div class="address">
+            <div class="address-left">
+            <address>
+           <p> <span class="material-symbols-outlined">
+                location_on</span><span class="address-para">123,Health St,</span></p>
+            <p><span class="material-symbols-outlined">
+                call
+            </span><span class="address-para">123-456-7890</span></p>
+           <p> <span class="material-symbols-outlined">
+                mail
+            </span><span class="address-para">Email:<a href="mailto:info@hospital.com">info@hospital.com</a></span></p>
+        </address>
+        </div>
+        <div class="loaction">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25836.237342945304!2d77.67155194897065!3d11.326549430584919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9660491daeb3b%3A0x181bce5c756c04e1!2sCare%2024%20Medical%20Center%20%26%20Hospital!5e1!3m2!1sen!2sin!4v1753075436109!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
