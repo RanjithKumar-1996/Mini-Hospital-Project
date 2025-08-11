@@ -1,11 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body {
     font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
 }
 
 .emergency {
@@ -217,10 +218,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  body {
-    margin: 0 30px;
-  }
-
+  
   .hospital-banner {
     padding: 8px;
   }
@@ -278,10 +276,7 @@ body {
     margin: 5px 0;
   }
 
-  body {
-    margin: 0 10px;
-  }
-
+  
   .appiontments,
   .contact {
     padding: 10px 0;
